@@ -14,6 +14,22 @@
   <router-view/>
 </template>
 
+<script>
+export default {
+  methods: {
+    redirect() {
+      this.$router.push({name: 'Home'})
+    },
+    forward() {
+      this.$router.go(1)
+    },
+    back() {
+      this.$router.go(-1)
+    }
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -45,5 +61,6 @@ button {
   padding: 10px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 </style>

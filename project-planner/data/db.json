@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": "2",
+      "title": "Updated Make marketing email",
+      "details": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": "e74e",
+      "title": "New One",
+      "details": "Ok",
+      "complete": true
+    },
+    {
+      "id": "6ed3",
+      "title": "Test",
+      "details": "Hello",
+      "complete": true
+    },
+    {
+      "id": "ce73",
+      "title": "Title",
+      "details": "Test Description",
+      "complete": false
+    }
+  ]
+}
