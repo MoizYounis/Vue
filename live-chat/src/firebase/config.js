@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAOanVUffDzgYKmyysHG9ex31OzTaIQrfQ",
@@ -7,14 +8,13 @@ const firebaseConfig = {
   projectId: "chatroom-72f43",
   storageBucket: "chatroom-72f43.appspot.com",
   messagingSenderId: "934981687019",
-  appId: "1:934981687019:web:d0024f7e312afc3e93d0ae",
+  appId: "1:934981687019:web:946348db65375fd993d0ae",
 };
 
-//   init firebase
+// init firebase
 firebase.initializeApp(firebaseConfig);
-
-// init firestore service
 const projectFirestore = firebase.firestore();
+const projectAuth = firebase.auth();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-export { projectFirestore, timestamp };
+export { projectFirestore, projectAuth, timestamp };
